@@ -1,136 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.HBox?>
-<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="dci.j24e1.group1.battleships.HelloController">
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="dci.j24e1.group1.battleships.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+    <HBox>
     <VBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
         <HBox>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
-            <Button minWidth="30" minHeight="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
         </HBox>
     </VBox>
+        <VBox minWidth="50">  </VBox>
+    <VBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+        <HBox>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+            <Button minHeight="30" minWidth="30" onAction="#fieldButtonClick"> </Button>
+        </HBox>
+    </VBox>
+    </HBox>
 </VBox>
