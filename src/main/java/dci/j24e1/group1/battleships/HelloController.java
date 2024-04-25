@@ -42,17 +42,15 @@ public class HelloController {
                     public void handle(ActionEvent event) {
                         Button button = (Button) event.getSource();
                         Object x = button.getProperties().get("x");
-                        Object y = button.getProperties().get("x");
-
-
+                        Object y = button.getProperties().get("y");
                     }
                 });
             }
-                box1.getChildren().add(hBox);
-            }
-
+            box1.getChildren().add(hBox);
         }
 
-
     }
+
+
+}
 
