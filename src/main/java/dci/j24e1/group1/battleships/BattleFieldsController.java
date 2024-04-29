@@ -5,10 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
-import static dci.j24e1.group1.battleships.UserField.userBox;
-import static dci.j24e1.group1.battleships.computerField.computerBox;
-
-
 public class BattleFieldsController {
     @FXML
     private VBox computerBox;
@@ -25,8 +21,9 @@ public class BattleFieldsController {
 
     @FXML
     private void initialize() {
-        userBox(computerBox);
-        computerBox(userBox);
+        UserShips userShips = new UserShips(4);
+        UserField userField = new UserField(userBox, userShips);
+        //computerBox(userBox);
     }
 
 
