@@ -8,10 +8,15 @@ import javafx.scene.layout.VBox;
 
 public class Field {
     private int[][] ships;
+    int row, cols, sumRow, sumCol;
+    int sum = 0;
+    int points = 0;
+
     public Field(VBox vbox, int[][] ships) {
         this.ships = ships;
         createField(vbox);
     }
+
     public void createField(VBox box) {
         for (int i = 0; i < 10; i++) {
             HBox hBox = new HBox();
@@ -26,18 +31,29 @@ public class Field {
                 button.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
+
                         Button button = (Button) event.getSource();
-                        int x = (int)button.getProperties().get("x");
-                        int y = (int)button.getProperties().get("y");
+                        int x = (int) button.getProperties().get("x");
+                        int y = (int) button.getProperties().get("y");
+                        button.setDisable(true);
+
 
                         if (ships[x][y] == 0) {
                             button.setStyle("-fx-background-color: #81D8D0");
-                        } else {
-                            button.setStyle("-fx-background-color: #826D8C");
                         }
-                      //  System.out.println(x);
-                     //   System.out.println(y);
+                        if (ships[x][y] > 0) {
+
+                            button.setStyle("-fx-background-color: #826D8C");
+                            points += ships[x][y];
+                            System.out.println(ships[x][y]);
+                            System.out.println("Points " + points);
+                        }
+                        if (points == 52) {
+                            System.out.println("You WON!!!! ");
+                        }
                     }
+
+
                 });
             }
             box.getChildren().add(hBox);
