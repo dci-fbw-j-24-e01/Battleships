@@ -6,8 +6,13 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class computerField {
-    public static void computerBox(VBox box) {
+public class Field {
+    private int[][] ships;
+    public Field(VBox vbox, int[][] ships) {
+        this.ships = ships;
+        createField(vbox);
+    }
+    public void createField(VBox box) {
         for (int i = 0; i < 10; i++) {
             HBox hBox = new HBox();
 
@@ -22,10 +27,16 @@ public class computerField {
                     @Override
                     public void handle(ActionEvent event) {
                         Button button = (Button) event.getSource();
-                        Object x = button.getProperties().get("x");
-                        Object y = button.getProperties().get("y");
-                        System.out.println(x);
-                        System.out.println(y);
+                        int x = (int)button.getProperties().get("x");
+                        int y = (int)button.getProperties().get("y");
+
+                        if (ships[x][y] == 0) {
+                            button.setStyle("-fx-background-color: #81D8D0");
+                        } else {
+                            button.setStyle("-fx-background-color: #826D8C");
+                        }
+                      //  System.out.println(x);
+                     //   System.out.println(y);
                     }
                 });
             }

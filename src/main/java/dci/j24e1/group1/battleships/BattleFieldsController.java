@@ -21,12 +21,8 @@ public class BattleFieldsController {
 
     @FXML
     private void initialize() {
-        UserShips userShips = new UserShips(4);
-        UserField userField = new UserField(userBox, userShips);
-        //computerBox(userBox);
+        Field field = new Field(computerBox, new ComputerShips().getComputerShips());
     }
-
-
 
 }
 
