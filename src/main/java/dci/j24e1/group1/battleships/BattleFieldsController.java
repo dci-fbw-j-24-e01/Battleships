@@ -17,10 +17,9 @@ public class BattleFieldsController {
 
         for (int i = 0; i < computerShips.getShips().length; i++) {
             for (int j = 0; j < computerShips.getShips()[i].length; j++) {
+                System.out.print(computerShips.getShips()[i][j].getId() + " ");
                 if (computerShips.getShips()[i][j].getId() == 0) {
-                    System.out.print(computerShips.getShips()[i][j].getId() + "  ");
-                } else {
-                    System.out.print(computerShips.getShips()[i][j].getId() + " ");
+                    System.out.print(" ");
                 }
             }
             System.out.println();
