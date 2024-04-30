@@ -6,16 +6,22 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class Field {
-    private int[][] ships;
-    int points = 0;
+import java.util.ArrayList;
 
-    public Field(VBox vbox, int[][] ships) {
+public class Field {
+    private Ship[][] ships;
+    private Button[][] buttons = new Button[10][10];
+    private VBox vbox;
+    private ArrayList<Ship> hittedShips = new ArrayList<>();
+    private int points = 0;
+
+    public Field(VBox vbox, Ship[][] ships) {
+        this.vbox = vbox;
         this.ships = ships;
-        createField(vbox);
+        createField();
     }
 
-    public void createField(VBox box) {
+    private void createField() {
         for (int i = 0; i < 10; i++) {
             HBox hBox = new HBox();
 
@@ -26,6 +32,7 @@ public class Field {
                 button.getProperties().put("x", i);
                 button.getProperties().put("y", j);
                 hBox.getChildren().add(button);
+                buttons[i][j] = button;
                 button.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
@@ -36,25 +43,54 @@ public class Field {
                         button.setDisable(true);
 
 
-                        if (ships[x][y] == 0) {
+                        if (ships[x][y].getId() == 0) {
                             button.setStyle("-fx-background-color: #81D8D0");
                         }
-                        if (ships[x][y] > 0) {
+                        if (ships[x][y].getId() > 0) {
 
                             button.setStyle("-fx-background-color: #826D8C");
-                            points += ships[x][y];
-                            System.out.println(ships[x][y]);
+                            points += ships[x][y].getId() / 10;
+                            System.out.println(ships[x][y].getId());
                             System.out.println("Points " + points);
+
+                            hittedShips.add(ships[x][y]);
+                            ArrayList<Ship> hittedShip = isDead(ships[x][y]);
+                            if(hittedShip != null) {
+                                ArrayList<Ship> waterAroundDeadShip = Ships.getShipsAroundShip(hittedShip, ships);
+                                for (Ship Ship : waterAroundDeadShip) {
+                                    buttons[Ship.getX()][Ship.getY()].setStyle("-fx-background-color: #81D8D0");
+                                    buttons[Ship.getX()][Ship.getY()].setDisable(true);
+                                }
+                            }
                         }
                         if (points == 50) {
+                            blockAllButtons();
                             System.out.println("You WON!!!! ");
                         }
                     }
-
-
                 });
             }
-            box.getChildren().add(hBox);
+            vbox.getChildren().add(hBox);
+        }
+    }
+    private ArrayList<Ship> isDead(Ship current) {
+        ArrayList<Ship> hittedShip = new ArrayList<>();
+        int length = current.getId() / 10;
+        for (Ship ship : hittedShips) {
+            if (ship.getId() == current.getId()) {
+                hittedShip.add(ship);
+            }
+        }
+        if(hittedShip.size() == length) {
+            return hittedShip;
+        }
+        return null;
+    }
+    private void blockAllButtons() {
+        for (Button[] button : buttons) {
+            for (Button value : button) {
+                value.setDisable(true);
+            }
         }
     }
 }
