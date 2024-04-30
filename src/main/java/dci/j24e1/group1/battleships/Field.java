@@ -46,7 +46,7 @@ public class Field {
                             System.out.println(ships[x][y]);
                             System.out.println("Points " + points);
                         }
-                        if (points == 52) {
+                        if (points == 50) {
                             System.out.println("You WON!!!! ");
                         }
                     }
