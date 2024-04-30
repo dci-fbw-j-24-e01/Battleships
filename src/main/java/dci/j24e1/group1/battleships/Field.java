@@ -8,8 +8,6 @@ import javafx.scene.layout.VBox;
 
 public class Field {
     private int[][] ships;
-    int row, cols, sumRow, sumCol;
-    int sum = 0;
     int points = 0;
 
     public Field(VBox vbox, int[][] ships) {
