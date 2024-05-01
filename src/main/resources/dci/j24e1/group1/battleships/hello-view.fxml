@@ -9,7 +9,8 @@
 <VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="dci.j24e1.group1.battleships.BattleFieldsController">
 
-    <VBox fx:id="computerBox" alignment="CENTER">
+    <VBox fx:id="computerBox" alignment="CENTER" >
+        <Label fx:id="counterLabel" text="Counter: ....."/>
         <Label fx:id="messageText">
 
         </Label>

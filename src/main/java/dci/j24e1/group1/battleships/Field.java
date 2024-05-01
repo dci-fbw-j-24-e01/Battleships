@@ -2,24 +2,32 @@ package dci.j24e1.group1.battleships;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+
 
 import java.util.ArrayList;
 
 public class Field {
+    @FXML
+    private Label counterLabel;
     private Ship[][] ships;
     private Button[][] buttons = new Button[10][10];
     private VBox vbox;
     private ArrayList<Ship> hittedShips = new ArrayList<>();
     private int points = 0;
+    private int counter = 100;
 
-    public Field(VBox vbox, Ship[][] ships) {
+    public Field(VBox vbox, Ship[][] ships, Label counterLabel) {
         this.vbox = vbox;
         this.ships = ships;
+        this.counterLabel = counterLabel;
         createField();
     }
+
 
     private void createField() {
         for (int i = 0; i < 10; i++) {
@@ -42,7 +50,6 @@ public class Field {
                         int y = (int) button.getProperties().get("y");
                         button.setDisable(true);
 
-
                         if (ships[x][y].getId() == 0) {
                             button.setStyle("-fx-background-color: #81D8D0");
                         }
@@ -55,7 +62,7 @@ public class Field {
 
                             hittedShips.add(ships[x][y]);
                             ArrayList<Ship> hittedShip = isDead(ships[x][y]);
-                            if(hittedShip != null) {
+                            if (hittedShip != null) {
                                 ArrayList<Ship> waterAroundDeadShip = Ships.getShipsAroundShip(hittedShip, ships);
                                 for (Ship Ship : waterAroundDeadShip) {
                                     buttons[Ship.getX()][Ship.getY()].setStyle("-fx-background-color: #81D8D0");
@@ -63,16 +70,28 @@ public class Field {
                                 }
                             }
                         }
-                        if (points == 50) {
-                            blockAllButtons();
-                            System.out.println("You WON!!!! ");
+                       
+                        if (event.getSource() == button) {
+                           counter -= 1;
+                            counterLabel.setText("You have   " + counter + " shots left");
+
                         }
+                        if(counter == 0 && points <50){
+                            blockAllButtons();
+                            counterLabel.setText("You looser");
+                        }
+                        if(counter > 0 && points == 50){
+                            blockAllButtons();
+                            counterLabel.setText("You WON!!!");
+                        }
+
                     }
                 });
             }
             vbox.getChildren().add(hBox);
         }
     }
+
     private ArrayList<Ship> isDead(Ship current) {
         ArrayList<Ship> hittedShip = new ArrayList<>();
         int length = current.getId() / 10;
@@ -81,11 +100,12 @@ public class Field {
                 hittedShip.add(ship);
             }
         }
-        if(hittedShip.size() == length) {
+        if (hittedShip.size() == length) {
             return hittedShip;
         }
         return null;
     }
+
     private void blockAllButtons() {
         for (Button[] button : buttons) {
             for (Button value : button) {
@@ -93,4 +113,6 @@ public class Field {
             }
         }
     }
+
+
 }
