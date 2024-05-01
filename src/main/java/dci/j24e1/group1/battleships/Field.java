@@ -74,16 +74,16 @@ public class Field {
                         if (event.getSource() == button) {
                            counter -= 1;
                             counterLabel.setText("You have   " + counter + " shots left");
+                            if(counter == 0 && points <50){
+                                blockAllButtons();
+                                counterLabel.setText("You looser");
+                            }
+                            if(counter > 0 && points == 50){
+                                blockAllButtons();
+                                counterLabel.setText("You WON!!!");
+                            }
+                        }
 
-                        }
-                        if(counter == 0 && points <50){
-                            blockAllButtons();
-                            counterLabel.setText("You looser");
-                        }
-                        if(counter > 0 && points == 50){
-                            blockAllButtons();
-                            counterLabel.setText("You WON!!!");
-                        }
 
                     }
                 });
